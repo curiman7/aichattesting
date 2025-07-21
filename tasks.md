@@ -7,28 +7,28 @@
 
 ### FRONTEND
 
-1. [✔️] Crear estructura mínima del frontend con Next.js (UI estática, sin lógica)
+1. [ ] Crear estructura mínima del frontend con Next.js (UI estática, sin lógica)
     - Inicializar proyecto Next.js en Vercel
     - Crear páginas y componentes base: Header, Sidebar, Panel de Chat
     - Implementar diseño responsive y estilos básicos tipo WhatsApp
 
-2. [✔️] Implementar selector de asistentes editable en el Header
+2. [ ] Implementar selector de asistentes editable en el Header
     - Componente para seleccionar asistentes disponibles
     - Área editable para logo y eslogan del cliente
 
-3. [✔️] Desarrollar Sidebar editable
+3. [ ] Desarrollar Sidebar editable
     - Componente para mostrar y editar imagen del asistente (subida manual)
     - Campos editables: nombre, descripción, habilidades
     - Configuración visual: colores, burbujas, patrones, tipografía
     - Activación/desactivación de funcionalidades del chat
     - Opción de configuración manual
 
-4. [✔️] Implementar Panel de Chat con historial agrupado por fecha
+4. [ ] Implementar Panel de Chat con historial agrupado por fecha
     - Renderizado de mensajes con burbujas diferenciadas
     - Agrupación de mensajes por fecha
     - Avatar solo para mensajes del asistente
 
-5. [✔️] Integrar funcionalidades del chat activables/desactivables
+5. [ ] Integrar funcionalidades del chat activables/desactivables
     - Subida de archivos
     - Subida de imágenes
     - Envío de audios

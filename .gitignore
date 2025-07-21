@@ -1,0 +1,63 @@
+# .gitignore para Next.js, Node, AWS SAM y entorno general
+
+# Node
+node_modules/
+.npm/
+.env
+.env.*
+
+# Next.js
+.next/
+out/
+.vercel/
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Editor/IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# AWS SAM
+.aws-sam/
+
+# Test/coverage
+coverage/
+
+# Otros
+*.local
+*.cache
+*.tmp
+
+# MacOS
+.AppleDouble
+.LSOverride
+
+# Windows
+Desktop.ini
+$RECYCLE.BIN/
+
+# Archivos temporales
+*.bak
+*.tmp
+*.temp
+
+# Archivos de sistema
+*.pid
+*.seed
+*.pid.lock
+
+# Evitar subir archivos sensibles
+secrets.*
+
+# Evitar archivos de configuración personal
+*.code-workspace

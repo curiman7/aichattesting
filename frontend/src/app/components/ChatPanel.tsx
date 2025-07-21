@@ -88,25 +88,30 @@ const ChatPanel: React.FC<ChatPanelProps> = ({
             </div>
             
             {group.messages.map((message) => (
-              <div 
+              <div
                 key={message.id}
-                className={`${styles.message} ${
-                  message.sender === 'user' ? styles.userMessage : styles.assistantMessage
-                }`}
+                className={`${styles.messageRow} ${message.sender === 'user' ? styles.userRow : styles.assistantRow}`}
               >
                 {message.sender === 'assistant' && (
                   <Image
                     src={assistantImage}
                     alt="Avatar"
-                    width={30}
-                    height={30}
+                    width={36}
+                    height={36}
                     className={styles.messageAvatar}
                   />
                 )}
-                <div className={styles.messageContent}>
-                  {message.text}
-                  <div className={styles.messageTime}>
-                    {message.timestamp.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })}
+                <div
+                  className={`${styles.message} ${
+                    message.sender === 'user' ? styles.userMessage : styles.assistantMessage
+                  }`}
+                  style={{ width: 'fit-content', maxWidth: '60vw' }}
+                >
+                  <div className={styles.messageContent}>
+                    {message.text}
+                    <div className={styles.messageTime}>
+                      {message.timestamp.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit', hour12: true })}
+                    </div>
                   </div>
                 </div>
               </div>

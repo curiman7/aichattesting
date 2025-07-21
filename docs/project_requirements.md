@@ -1,9 +1,9 @@
 # project-requirements.md
 
 ## 🎯 Objetivo General
-Desarrollar una interfaz web tipo chat conversacional, que funcione como herramienta de demostración de asistentes virtuales personalizados, con capacidad de personalización visual, configuración manual y automática mediante IA, y conexión con múltiples backends.
-La empresa es una agencia de automaticación que hace diversos chat conversacionales con IA y busca mostrar a sus clientes, los distintos asistentes que ha generado para ver si le gustaria adquirirlos.
-El desarrollo debe estar altamende desacoplado y configurable, manual o con IA. tendra un forntend y dos backends, uno para la logica de configuracion en linea y en otro para el asistente para los chats conversacionales.
+Desarrollar una interfaz web tipo chat conversacional, que funcione como herramienta de demostración de asistentes virtuales personalizados, con capacidad de personalización visual, configuración manual y conexión con backend de chat conversacional.
+La empresa es una agencia de automatización que hace diversos chat conversacionales y busca mostrar a sus clientes los distintos asistentes que ha generado para ver si le gustaría adquirirlos.
+El desarrollo debe estar altamente desacoplado y configurable manualmente. Tendrá un frontend y un backend para el asistente de chats conversacionales.
 
 ---
 
@@ -15,8 +15,7 @@ El desarrollo debe estar altamende desacoplado y configurable, manual o con IA. 
 - Responsive design: barra lateral izquierda se colapsa en móviles
 - Parte superior (barra horizontal completa):
   - Lado izquierdo: selector de asistentes disponible para el chat.
-  - Lado derecho: espacio editable con el logo y eslogan del cliente (branding)
-  - Si la imagen del asistente es generada por IA, automáticamente se replica como logo de marca en el lado derecho
+  - Lado derecho: espacio editable con el logo y eslogan del cliente
 - Parte superior del panel de chat: nombre del asistente e ícono
 - Componente de conversación con historial agrupado por fecha, en el mismo hilo de chat (como WhatsApp)
 - Funcionalidades del chat (activables/desactivables desde el panel izquierdo):
@@ -28,13 +27,17 @@ El desarrollo debe estar altamende desacoplado y configurable, manual o con IA. 
   - Enviar stickers
 
 ### 🧭 Barra lateral izquierda (sidebar)
-- Imagen del asistente, generada automáticamente con IA o cargada por el usuario
-- Botón de edición de imagen (subida o generación IA por prompt)
+- Imagen del asistente, cargada por el usuario
+- Botón de edición de imagen (solo subida manual)
 - Texto editable: descripción del asistente, habilidades, nombre visible
 - Configuraciones visuales: colores de fondo, burbujas, patrón, etc.
 - Configuraciones de texto (tipografía, tamaño, espaciado)
 - Configuración de funcionalidades del chat (habilitar o deshabilitar carga de archivos, gifs, audio, stickers, etc.)
-- Todo editable manualmente o mediante IA ("IA de settings")
+- Todo editable manualmente
+
+Permitir configurar el endpoint del chat desde la UI (lado izquierdo):
+  - Campo para ingresar la URL del endpoint del chat conversacional
+  - Guardar y usar el endpoint para activar el chat
 
 ---
 
