@@ -1,0 +1,47 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100%;
+}
+
+.content {
+  display: flex;
+  flex: 1;
+  overflow: hidden;
+}
+
+.rightPanel {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  height: 100vh;
+  background: #fff;
+}
+
+.brandingHeader {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 24px 10px 24px;
+  background: #f0f2f5;
+  border-bottom: 1px solid #e0e0e0;
+  height: 60px;
+}
+
+.brandLogo {
+  border-radius: 50%;
+  object-fit: contain;
+}
+
+.brandSlogan {
+  font-size: 14px;
+  font-weight: 500;
+  color: #333;
+}
+
+@media (max-width: 768px) {
+  .content {
+    position: relative;
+  }
+}

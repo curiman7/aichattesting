@@ -1,0 +1,51 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 16px;
+  background-color: #f0f2f5;
+  border-bottom: 1px solid #e0e0e0;
+  height: 60px;
+}
+
+.assistantSelector {
+  display: flex;
+  align-items: center;
+}
+
+.selector {
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  background-color: white;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.branding {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo {
+  border-radius: 50%;
+  object-fit: contain;
+}
+
+.slogan {
+  font-size: 14px;
+  font-weight: 500;
+  color: #333;
+  display: block;
+}
+
+@media (max-width: 600px) {
+  .slogan {
+    display: none;
+  }
+  
+  .header {
+    padding: 10px;
+  }
+}
